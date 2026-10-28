@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block heading %}Request issue{% endblock %}{% block content %}<div class="card-panel"><h1>We couldn't complete that request</h1><p>{{ message }}</p><a href="{{ url_for('main.dashboard') if nav_user else url_for('main.login') }}">Return to workspace</a></div>{% endblock %}
